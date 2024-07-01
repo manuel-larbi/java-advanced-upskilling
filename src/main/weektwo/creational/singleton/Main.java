@@ -1,4 +1,4 @@
-package weektwo.singleton;
+package weektwo.creational.singleton;
 
 public class Main {
 

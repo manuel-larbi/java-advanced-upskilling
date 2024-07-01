@@ -1,4 +1,4 @@
-package weektwo.singleton;
+package weektwo.creational.singleton;
 
 class Logger {
     private static Logger instance = null;
