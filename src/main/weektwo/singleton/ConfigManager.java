@@ -16,7 +16,7 @@ class ConfigManager {
     // Private constructor to prevent instantiation
     private ConfigManager() throws Exception {
         if (instance != null) {
-            throw new Exception("Object already has declared");
+            throw new Exception("Object is already declared");
         }
         properties = new Properties();
         loadConfiguration();
@@ -33,9 +33,9 @@ class ConfigManager {
     // Method to load configuration from file or environment variables
     private void loadConfiguration() {
         try {
-            FileInputStream input = new FileInputStream("C:\\Users\\emmanuelLarbi\\dev\\Amalitech\\java-advanced-upskilling\\src\\main\\weektwo\\config.properties");
-            properties.load(input);
-            input.close();
+            try (FileInputStream input = new FileInputStream("src/main/weektwo/singleton/config.properties")) {
+                properties.load(input);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

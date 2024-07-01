@@ -1,8 +1,6 @@
 package weektwo.singleton;
 
-// Singleton Logger class
 class Logger {
-    // Private static instance variable
     private static Logger instance = null;
 
     // Private constructor to prevent instantiation
@@ -11,14 +9,18 @@ class Logger {
 
     {
         if (instance != null) {
-            throw new Exception("Object already has declared");
+            throw new Exception("Object is already declared");
         }
     }
 
     // Static method to get the singleton instance
-    public static synchronized Logger getInstance() throws Exception {
+    public static Logger getInstance() throws Exception {
         if (instance == null) {
-            instance = new Logger();
+            synchronized (Logger.class){
+                if (instance == null) {
+                    instance = new Logger();
+                }
+            }
         }
         return instance;
     }

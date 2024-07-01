@@ -5,7 +5,7 @@ import util.ArrayGenerator;
 import java.util.Arrays;
 
 public class ParallelMatrixMultiplicationMain {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
 
         ArrayGenerator generator = new ArrayGenerator(2);
