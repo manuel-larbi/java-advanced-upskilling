@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public record StockPriceResponse() {
+public class StockPriceResponse{
     @SerializedName("Time Series (5min)")
     private static Map<String, TimeSeries> timeSeries;
 

@@ -1,5 +1,6 @@
 package org.manuel.reactiveprogramming;
 
+
 import org.manuel.reactiveprogramming.service.StockPriceService;
 
 public class StockPriceApplication {

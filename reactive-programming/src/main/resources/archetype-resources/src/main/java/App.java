@@ -1,4 +1,4 @@
-package $org.manuel;
+package $org.example;
 
 /**
  * Hello world!
