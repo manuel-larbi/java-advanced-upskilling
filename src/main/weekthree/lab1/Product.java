@@ -1,4 +1,4 @@
-package weekthree;
+package weekthree.lab1;
 
 public sealed class Product permits ElectronicsProduct, ClothingProduct {
     private final String name;

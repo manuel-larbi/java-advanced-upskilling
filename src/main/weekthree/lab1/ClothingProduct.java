@@ -1,4 +1,4 @@
-package weekthree;
+package weekthree.lab1;
 
 public final class ClothingProduct extends Product {
     private final String size;

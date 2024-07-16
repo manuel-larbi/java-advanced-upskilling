@@ -1,4 +1,4 @@
-package weekthree;
+package weekthree.lab1;
 
 public class Main {
 
