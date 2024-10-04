@@ -1,4 +1,4 @@
-package weektwo.creational.factory.shape.concrete;
+package weektwo.creational.factory.shape.concreteproduct;
 
 import weektwo.creational.factory.shape.Shape;
 
